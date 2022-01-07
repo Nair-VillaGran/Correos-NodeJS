@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 offset-md-3 mt-3">
+                <div class="card card-body p-4 rounded-8 bg-dark text-white">
+
+                    <h3>Send Email 📨</h3>
+
+                    <form action="/send-email" method="post">
+                        
+                        <div>
+                            <label for="title">Sender:</label><br />
+                            <input type="text" name="sender" placeholder="Sender" id="sender"
+                                class="form-control rounded-0 bg-dark text-white" required />
+                        </div><br />
+
+                        <div>
+                            <label for="title">Addressee:</label><br />
+                            <input type="text" name="addressee" placeholder="Addressee" id="addressee"
+                                class="form-control rounded-0 bg-dark text-white" required />
+                        </div><br />
+
+                        <div>
+                            <label for="title">Subject:</label><br />
+                            <input type="text" name="subject" id="subject"placeholder="Subject"
+                                class="form-control rounded-0 bg-dark text-white" required />
+                        </div><br />    
+                        <div>
+                            <label for="description">Write a message:</label><br />
+                            <textarea name="message" placeholder="Message" id="message"
+                                class="form-control rounded-0 bg-dark text-white" required></textarea>
+                        </div><br />
+
+
+
+                        <div class="text-center">
+                            <button class="btn btn-success text-white btn-lg m-2">Send Email</button>
+                        </div>
+
+                    </form>
+                </div><br>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
