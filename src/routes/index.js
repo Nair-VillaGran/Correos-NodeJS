@@ -6,7 +6,7 @@ const { emailSend, passwordSend } = require("../config.js");
 
 const router = Router();
 
-router.get('/',()=>{
+router.get('/',(req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'))
 })
 
