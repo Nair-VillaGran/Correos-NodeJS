@@ -1,9 +1,14 @@
 const { Router } = require("express");
+const res = require("express/lib/response");
 const nodemailer = require("nodemailer");
 const path = require("path");
 const { emailSend, passwordSend } = require("../config.js");
 
 const router = Router();
+
+router.get('/',()=>{
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+})
 
 router.post("/send-email", (req, res) => {
   const { sender, addressee, subject, message } = req.body;
