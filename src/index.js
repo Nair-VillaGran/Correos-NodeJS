@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const path = require("path");
+const {PORT} = require("./config.js") 
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
